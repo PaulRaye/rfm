@@ -45,7 +45,7 @@ module Rfm
       
       def all
         if !@loaded
-          Rfm::Result::ResultSet.new(@server, @server.connect('-layoutnames', {"-db" => @database.name}).body).each {|record|
+          Rfm::ResultSet.new(@server, @server.connect('-layoutnames', {"-db" => @database.name}).body).each {|record|
             name = record['LAYOUT_NAME']
             self[name] = Rfm::Layout.new(name, @database) if self[name] == nil
           }
