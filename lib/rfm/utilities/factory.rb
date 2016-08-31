@@ -4,6 +4,7 @@
 # Author::    Geoff Coffey  (mailto:gwcoffey@gmail.com)
 # Copyright:: Copyright (c) 2007 Six Fried Rice, LLC and Mufaddal Khumri
 # License::   See MIT-LICENSE for details
+require 'rfm/resultset'
 
 module Rfm
   module Factory # :nodoc: all
